@@ -8,6 +8,12 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+
+    /* debugging */
+    /* background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important */
+   
 }
 
 body{
@@ -222,7 +228,7 @@ img{
  }
 
  .img-container{
-    width: 60rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -675,8 +681,8 @@ img{
 }
 
 @media (max-width:480px){
-    .max-width{
-        min-height: 100vh;
+    .home-content{
+        min-height: 0;
     }
 
     .home .square1{
