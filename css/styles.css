@@ -454,8 +454,9 @@ img{
     padding: 8px 20px;
     margin-bottom: 0.5rem;
     background: none;
-    color:coral;
-    border: 2px solid coral;
+    color:aliceblue;
+    border: 2px solid aliceblue;
+    background-color: coral;
     box-shadow: 0px 2px 2px coral;
     cursor: pointer;
     transition: 0.5s ease;
@@ -463,9 +464,10 @@ img{
  }
 
  .works-button:hover, .works-button:active{
-    color:aliceblue;
-    border: 2px solid aliceblue;
-    background-color: coral;
+    color:coral;
+    border: 2px solid coral;
+    background-color: aliceblue;
+    box-shadow: 0px 2px 2px aliceblue;
  }
 
  .view-works-button{
