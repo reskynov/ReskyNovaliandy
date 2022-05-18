@@ -56,11 +56,11 @@ img{
     font-size: 1.5rem;
 }
 
-.icon-title1 a:hover, .icon-title1 a:active{
+.icon-title1 a:hover{
     color:rgb(64, 197, 64);
 }
 
-.navbar .logo a:hover, .navbar .logo a:active{
+.navbar .logo a:hover{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -76,7 +76,7 @@ img{
     font-size: 18px;
 }
 
-.navbar .menu li a:hover, .navbar .menu li a:active{
+.navbar .menu li a:hover{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -101,7 +101,7 @@ img{
     margin: 0 1rem;
 }
 
-.footer a:hover, .footer a:active{
+.footer a:hover{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -152,7 +152,7 @@ img{
     transition: 0.5s ease;
 }
 
-.home .home-button:hover, .home .home-button:active{
+.home .home-button:hover{
     background-color:rgb(231, 110, 65);
     color:aliceblue;
     box-shadow: 3px 2px 3px aliceblue;
@@ -174,7 +174,7 @@ img{
     transition: 1s;
 }
 
-.border-title:hover, .border-title:active{
+.border-title:hover{
     border-radius: 30px;
     margin:auto;
     transition: all 1s;
@@ -200,7 +200,7 @@ img{
     font-size: 8rem;
 }
 
-.border-title h1.icon-title1:hover, .border-title h1.icon-title1:active{
+.border-title h1.icon-title1:hover{
     color:rgb(64, 197, 64);
     text-shadow: 2px 2px 2px #cacaca;
     cursor:default;
@@ -257,7 +257,7 @@ img{
      padding: 0.25rem 1rem;
  }
 
- .buttonCV:hover, .buttonCV:active{
+ .buttonCV:hover{
     color: coral;
     border:2px solid coral;
     box-shadow: 0 0 5px coral;
@@ -328,10 +328,6 @@ img{
  .table-content th{
     font-size: 1.1rem;
     color: coral;
- }
-
- .table-content a:hover, .table-content a:active{
-    color:coral;
  }
 
  .skills {
@@ -463,7 +459,7 @@ img{
     border-radius: 10px;
  }
 
- .works-button:hover, .works-button:active{
+ .works-button:hover{
     color:coral;
     border: 2px solid coral;
     background-color: aliceblue;
@@ -483,7 +479,7 @@ img{
     border-radius: 10px;
   }
 
-  .view-works-button:hover, .view-works-button:active{
+  .view-works-button:hover{
     color:aliceblue;
     border: 2px solid coral;
     background-color: coral;
@@ -700,9 +696,6 @@ img{
 }
 
 @media (max-width:480px){
-    .home-content{
-        min-height: 0;
-    }
 
     .home .home-button{
         font-size: 12px;
