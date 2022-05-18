@@ -56,11 +56,11 @@ img{
     font-size: 1.5rem;
 }
 
-.icon-title1 a:hover{
+.icon-title1 a:hover, .icon-title1 a:active{
     color:rgb(64, 197, 64);
 }
 
-.navbar .logo a:hover{
+.navbar .logo a:hover, .navbar .logo a:active{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -76,7 +76,7 @@ img{
     font-size: 18px;
 }
 
-.navbar .menu li a:hover{
+.navbar .menu li a:hover, .navbar .menu li a:active{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -101,7 +101,7 @@ img{
     margin: 0 1rem;
 }
 
-.footer a:hover{
+.footer a:hover, .footer a:active{
     color:coral;
     transition: all 0.3s ease 0s;
 }
@@ -152,7 +152,7 @@ img{
     transition: 0.5s ease;
 }
 
-.home .home-button:hover{
+.home .home-button:hover, .home .home-button:active{
     background-color:rgb(231, 110, 65);
     color:aliceblue;
     box-shadow: 3px 2px 3px aliceblue;
@@ -167,12 +167,17 @@ img{
     height: 15rem;
     border-radius: 50%;
     box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
     transition: 1s;
 }
 
-.border-title:hover{
+.border-title:hover, .border-title:active{
     border-radius: 30px;
     margin:auto;
+    transition: all 1s;
 }
 
 .icon-title1{
@@ -195,7 +200,7 @@ img{
     font-size: 8rem;
 }
 
-.border-title h1.icon-title1:hover{
+.border-title h1.icon-title1:hover, .border-title h1.icon-title1:active{
     color:rgb(64, 197, 64);
     text-shadow: 2px 2px 2px #cacaca;
     cursor:default;
@@ -252,7 +257,7 @@ img{
      padding: 0.25rem 1rem;
  }
 
- .buttonCV:hover{
+ .buttonCV:hover, .buttonCV:active{
     color: coral;
     border:2px solid coral;
     box-shadow: 0 0 5px coral;
@@ -286,7 +291,7 @@ img{
      transition: 500ms ease-in-out;
  }
 
- .tabs-title:hover{
+ .tabs-title:hover, .tabs-title:active{
      cursor:pointer;
      color: coral;
  }
@@ -325,7 +330,7 @@ img{
     color: coral;
  }
 
- .table-content a:hover{
+ .table-content a:hover, .table-content a:active{
     color:coral;
  }
 
@@ -369,7 +374,7 @@ img{
     box-shadow: var(--shadow-4);
 }
 
- .card-container:hover{
+ .card-container:hover, .card-container:active{
      border: 2px solid coral;
  }
 
@@ -435,7 +440,7 @@ img{
      cursor: pointer;
  }
 
- .back-button:hover{
+ .back-button:hover, .back-button:active{
      color:coral;
  }
 
@@ -531,6 +536,18 @@ img{
     border-left: 20px solid transparent;
     z-index: -1;
     animation: 4s spinner ease infinite both;
+}
+
+@keyframes floating {
+    0% { 
+        transform: translate(0,  0px); 
+    }
+    50% { 
+        transform: translate(0, 10px);
+    }
+    100% { 
+        transform: translate(0, -0px); 
+    }   
 }
 
 @keyframes fade{
@@ -683,6 +700,11 @@ img{
 @media (max-width:480px){
     .home-content{
         min-height: 0;
+    }
+
+    .home .home-button{
+        font-size: 12px;
+        padding: 8px 12px;
     }
 
     .home .square1{

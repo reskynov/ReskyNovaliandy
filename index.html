@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://unpkg.com/open-props">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="images/icon.png">
     <script src="https://kit.fontawesome.com/4ed3317e0f.js" crossorigin="anonymous"></script>
     <title>Resky Novaliandy</title>
@@ -25,20 +26,23 @@
     <section class="home">
         <div class="max-width">
             <div class="home-content">
-                <div class="home-text">
+                <div class="home-text"data-aos="fade-right" data-aos-duration="300">
                     <h2 class="text1">Hello</h2>
                     <h2 class="text2"><span>My Name is </span><span style="color:coral;">Resky Novaliandy</span></h2>
                     <h2 class="text2"><span>A </span><span style="color:coral;">Web</span><span> Developer</span></h2>
                     <button class="home-button" onclick="location.href='about.html'">More About Me</button>
                 </div>
                 <div class="border-title">
-                    <h1 class="icon-title1 title-size1">R<span class="icon-title2 title-size2">N</span></h1>
+                    <div data-aos="zoom-in" data-aos-duration="1000">
+                        <h1 class="icon-title1 title-size1">R<span class="icon-title2 title-size2">N</span></h1>
+                    </div>
                 </div>
                 <div class="square1"></div>
                 <div class="triangle1"></div>
                 <div class="circle1"></div>
                 <div class="square2"></div>
             </div>
+            <!-- Footer -->
             <footer class="footer">
                 <hr class="footer-border">
                 <a  href="mailto:reskykiky2000@gmail.com"><i class="icon-footer fa-solid fa-envelope fa-xl"></i></a>
@@ -46,6 +50,9 @@
             </footer>
         </div>
     </section>
-    <!-- Footer -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

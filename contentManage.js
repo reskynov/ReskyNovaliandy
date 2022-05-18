@@ -1,14 +1,17 @@
 let tabs = document.querySelectorAll('.tabs-title');
 let contents = document.querySelectorAll('.table-content');
-let shapesOp = document.querySelectorAll('.bg-shape-op');
-let shapesEd = document.querySelectorAll('.bg-shape-ed');
 
 let modals = document.querySelectorAll(".works-desc-modal");
 let openModals = document.querySelectorAll(".works-button");
 let closeModals = document.querySelectorAll(".back-button");
 
+var doNotScroll = function() {
+    var x = window.scrollX, y = window.scrollY;
+    window.scrollTo(x, y);
+}
+
 tabs.forEach((tab, index) => {
-    tab.addEventListener('click', () => {
+    tab.addEventListener('click', (e) => {
         contents.forEach((content) => {
             content.classList.remove('is-active');
         });
@@ -18,6 +21,7 @@ tabs.forEach((tab, index) => {
         contents[index].classList.add('is-active');
         tabs[index].classList.add('is-active');
     });
+    doNotScroll();
 });
 
 openModals.forEach((openModal, index) => {
