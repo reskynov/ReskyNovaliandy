@@ -241,11 +241,25 @@ img{
 
  }
  .img-profile{
-     background-color: coral;
      height: 15rem;
      width: 15rem;
      border-radius: 50%;
      box-shadow: 2px 3px 0px 3px aliceblue, -2px -3px 0px 3px aliceblue;
+     background-image: url("profile-photo.jpg");
+     transition: all 1.2s ease-in-out;
+     background-size: 100% 100%;
+ }
+
+ .img-profile:hover{
+      cursor: pointer;
+ }
+
+ .hover-new-profile-pic{
+    background-image: url("profile-photo2.jpg");
+ }
+
+ .click-new-profile-pic{
+    background-image: url("profile-photo1.jpg");
  }
 
  .links{
