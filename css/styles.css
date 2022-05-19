@@ -245,7 +245,7 @@ img{
      height: 15rem;
      width: 15rem;
      border-radius: 50%;
-     box-shadow: 3px 3px 3px #ffffff, -3px -3px 3px #ffffff;
+     box-shadow: 2px 3px 0px 3px aliceblue, -2px -3px 0px 3px aliceblue;
  }
 
  .links{
