@@ -3,14 +3,6 @@ var gun = new Audio("sounds/gun sound.mp3");
 let tabs = document.querySelectorAll(".tabs-title");
 let contents = document.querySelectorAll(".table-content");
 
-//imgProfile hover effect
-imgProfile.addEventListener('mouseover', () => {
-    imgProfile.classList.add('hover-new-profile-pic');
-});
-imgProfile.addEventListener('mouseout', () => {
-    imgProfile.classList.remove("hover-new-profile-pic");
-});
-
 imgProfile.addEventListener('click', () =>{
     gun.play();
     imgProfile.classList.add("click-new-profile-pic");

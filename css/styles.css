@@ -254,10 +254,6 @@ img{
       cursor: pointer;
  }
 
- .hover-new-profile-pic{
-    background-image: url("profile-photo2.jpg");
- }
-
  .click-new-profile-pic{
     background-image: url("profile-photo1.jpg");
  }
