@@ -248,6 +248,7 @@ img{
      background-image: url("profile-photo.jpg");
      transition: all 1.2s ease-in-out;
      background-size: 100% 100%;
+     background-color: coral;
  }
 
  .img-profile:hover{
